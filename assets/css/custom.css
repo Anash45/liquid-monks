@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+nav{
+    background-color: #454e56;
+    color: #f97316;
+}
+html,body{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f8f8f8;
+    font-family: "Poppins", sans-serif;
+    color: #454e56 !important;
+}
+
+#menu{
+    display: none;
+}
+.hero-img{
+    position: relative;
+}
+.hero-img img{
+    width: 300px;
+    margin: 0 auto;
+}
+
+.mouse{
+    position: absolute;
+    left: calc(50% - 13px);
+    bottom: 40px;
+    border: 2px solid #454e56;
+    height: 40px;
+    width: 26px;
+    border-radius: 45%;
+    -webkit-border-radius: 45%;
+    -moz-border-radius: 45%;
+    -ms-border-radius: 45%;
+    -o-border-radius: 45%;
+}
+
+.dot{
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    margin: 5px 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: dot 1s infinite ease-in-out;
+    -webkit-animation: dot 1s infinite ease-in-out;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+@keyframes dot {
+
+    /* // dot animation holds the frame from 0% - 10% */
+    0% {
+        transform: translate(-50%, -50%);
+    }
+
+    10% {
+        transform: translate(-50%, -50%);
+        /* // dot animation holds the frame */
+    }
+
+    50% {
+        transform: translate(-50%, 25px);
+    }
+
+    /* // dot animation returns to default position */
+    100% {
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+.greyscale img{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: ease-in-out 0.3s;
+    -webkit-transition: ease-in-out 0.3s;
+    -moz-transition: ease-in-out 0.3s;
+    -ms-transition: ease-in-out 0.3s;
+    -o-transition: ease-in-out 0.3s;
+}
+.greyscale:hover img{
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+}
+
+.btn-lg{
+    background-color: #454e56 !important;
+    color: #fff;
+    transition: ease-in-out 0.3s;
+    -webkit-transition: ease-in-out 0.3s;
+    -moz-transition: ease-in-out 0.3s;
+    -ms-transition: ease-in-out 0.3s;
+    -o-transition: ease-in-out 0.3s;
+}
+.btn-lg:hover{
+    background-color: #f97316!important;
+}
+
+.project{
+    position: relative;
+    color: #fff;
+}
+.btn-view{
+    background-color: #ffffff79;
+    color: #fff;
+    transition: ease-in-out 0.3s;
+    -webkit-transition: ease-in-out 0.3s;
+    -moz-transition: ease-in-out 0.3s;
+    -ms-transition: ease-in-out 0.3s;
+    -o-transition: ease-in-out 0.3s;
+}
+
+.btn-view:hover{
+    color: #000;
+    background-color: #ffffff;
+}
+
+.border-bottom{
+    border-bottom: 2px solid #fff;
+}
+
+.service{
+    background-color: #fff;
+}
+
+.icon{
+    height: 90px;
+    width: 90px;
+    border: 1px solid #B2BECD;
+    border-radius: 50%;
+    position: relative;
+}
+
+.icon::after{
+    height: 10px;
+    width: 10px;
+    content: "";
+    position: absolute;
+    left: calc(50% - 5px);
+    top: -5px;
+    background-color: #B2BECD;
+    border-radius: 50%;
+}
+
+.news-text{
+    position: absolute;
+    background-color: #f8f8f8;
+    transform: translate(-50%, -50%) scale(0);
+    width: 94%;
+    height: 96%;
+    left: 50%;
+    top: 50%;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.4s ease all;
+    -webkit-transform: translate(-50%, -50%) scale(0);
+    -moz-transform: translate(-50%, -50%) scale(0);
+    -ms-transform: translate(-50%, -50%) scale(0);
+    -o-transform: translate(-50%, -50%) scale(0);
+    -webkit-transition: 0.4s ease all;
+    -moz-transition: 0.4s ease all;
+    -ms-transition: 0.4s ease all;
+    -o-transition: 0.4s ease all;
+}
+
+.news:hover .news-text{
+    transform: translate(-50%, -50%) scale(1);
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    -moz-transform: translate(-50%, -50%) scale(1);
+    -ms-transform: translate(-50%, -50%) scale(1);
+    -o-transform: translate(-50%, -50%) scale(1);
+}
+.form-group label{
+    background-color: #f8f8f8;
+}
+.input{
+    background-color: #f8f8f8;
+    border: 1px solid #B2BECD;
+}
+
+iframe{
+    min-height: 400px;
+}
